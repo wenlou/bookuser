@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/login_picture"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/login_picture_bg"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/login_default_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/login_picture">
+
+        <LinearLayout
+            android:id="@+id/ll_user_info"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/lbs_popup_bg"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/account"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:inputType="text"
+                android:hint="账号/手机号/邮箱"
+                android:background="@drawable/login_et_bg"
+                android:layout_margin="2dp"/>
+
+            <View
+                android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:background="#CBCED2"/>
+
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:inputType="textPassword"
+                android:hint="密码"
+                android:background="@drawable/login_et_bg"
+                android:layout_margin="2dp"/>
+
+
+
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="登录"
+        android:layout_below="@id/ll_user_info"
+        android:background="@drawable/login_btn"
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#499BF7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="忘记密码？"
+    android:layout_below="@+id/login"
+    android:layout_alignLeft="@+id/login"
+    android:layout_alignStart="@+id/login"
+        android:id="@+id/textView2" />
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#499BF7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短信验证码登录"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignRight="@+id/login"
+        android:layout_alignEnd="@+id/login" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
